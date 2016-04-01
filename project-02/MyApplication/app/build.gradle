@@ -26,5 +26,8 @@ dependencies {
     compile 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
     compile 'com.google.android.gms:play-services:8.4.0'
     //compile 'com.yelp.clientlib:yelp-android:1.0.0'
+<<<<<<< HEAD
     compile 'com.google.code.gson:gson:2.6.2'
+=======
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
 }

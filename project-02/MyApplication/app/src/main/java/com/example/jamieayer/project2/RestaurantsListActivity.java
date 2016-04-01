@@ -40,10 +40,25 @@ public class RestaurantsListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_restaurants_list);
 
         DBRestaurantsAssetHelper dbSetup = new DBRestaurantsAssetHelper(RestaurantsListActivity.this);
+<<<<<<< HEAD
         dbSetup.getWritableDatabase();
 
         initViews();
 
+=======
+        dbSetup.getReadableDatabase();
+
+        Toolbar toolbar = (Toolbar)findViewById(R.id.my_toolbar);
+        setSupportActionBar(toolbar);
+
+        setTitle("Search for Restaurants");
+
+        mTitle = (TextView)findViewById(R.id.restaurants);
+        mFont = Typeface.createFromAsset(getAssets(), "fonts/AguafinaScript-Regular.ttf");
+        mTitle.setTypeface(mFont);
+
+        mRestaurantListView = (ListView)findViewById(R.id.restaurantsList);
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
         mHelper = new RestaurantsSQLiteOpenHelper(RestaurantsListActivity.this);
 
         cursor = mHelper.getRestaurantList();
@@ -106,6 +121,7 @@ public class RestaurantsListActivity extends AppCompatActivity {
             mCursorAdapter.swapCursor(cursor);
         }
     }
+<<<<<<< HEAD
 
     private void initViews() {
         Toolbar toolbar = (Toolbar)findViewById(R.id.my_toolbar);
@@ -119,4 +135,6 @@ public class RestaurantsListActivity extends AppCompatActivity {
 
         mRestaurantListView = (ListView)findViewById(R.id.restaurantsList);
     }
+=======
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
 }

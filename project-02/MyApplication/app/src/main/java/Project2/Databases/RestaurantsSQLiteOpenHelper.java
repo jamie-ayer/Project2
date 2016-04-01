@@ -67,6 +67,10 @@ public class RestaurantsSQLiteOpenHelper extends SQLiteOpenHelper{
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+<<<<<<< HEAD
+=======
+        db.execSQL("DROP TABLE IF EXISTS " + RESTAURANT_LIST_TABLE_NAME);
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
         this.onCreate(db);
     }
 
@@ -86,6 +90,66 @@ public class RestaurantsSQLiteOpenHelper extends SQLiteOpenHelper{
         return cursor;
     }
 
+<<<<<<< HEAD
+=======
+    public String getRestaurantName(int id){
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = db.query(RESTAURANT_LIST_TABLE_NAME,
+                new String[]{COL_NAME},
+                COL_ID+" = ?",
+                new String[]{String.valueOf(id)},
+                null,
+                null,
+                null,
+                null);
+
+        if(cursor.moveToFirst()){
+            return cursor.getString(cursor.getColumnIndex(COL_NAME));
+        } else {
+            return "No Name Found";
+        }
+    }
+
+    public String getRestaurantType(int id){
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = db.query(RESTAURANT_LIST_TABLE_NAME,
+                new String[]{COL_TYPE},
+                COL_ID+" = ?",
+                new String[]{String.valueOf(id)},
+                null,
+                null,
+                null,
+                null);
+
+        if(cursor.moveToFirst()){
+            return cursor.getString(cursor.getColumnIndex(COL_TYPE));
+        } else {
+            return "No Type Found";
+        }
+    }
+
+    public String getRestaurantAddress(int id){
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = db.query(RESTAURANT_LIST_TABLE_NAME,
+                new String[]{COL_ADDRESS},
+                COL_ID+" = ?",
+                new String[]{String.valueOf(id)},
+                null,
+                null,
+                null,
+                null);
+
+        if(cursor.moveToFirst()){
+            return cursor.getString(cursor.getColumnIndex(COL_ADDRESS));
+        } else {
+            return "No Address Found";
+        }
+    }
+
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
     public Restaurant getRestaurantByID(int id){
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -136,7 +200,12 @@ public class RestaurantsSQLiteOpenHelper extends SQLiteOpenHelper{
                 null,
                 null,
                 null);
+<<<<<<< HEAD
 
+=======
+//        cursor.moveToFirst();
+//        Log.i(RestaurantsSQLiteOpenHelper.class.getSimpleName(), "searchList: "+ cursor.getString(cursor.getColumnIndex(COL_TYPE)));
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
         return  cursor;
 
     }

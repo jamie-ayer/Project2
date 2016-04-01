@@ -36,6 +36,7 @@ public class Restaurant {
         return lng;
     }
 
+<<<<<<< HEAD
     public String getName() {
         return mName;
     }
@@ -61,6 +62,33 @@ public class Restaurant {
     }
 
     public int getRestaurantID() {
+=======
+    public String getmName() {
+        return mName;
+    }
+
+    public String getmType() {
+        return mType;
+    }
+
+    public String getmAddress() {
+        return mAddress;
+    }
+
+    public String getmNeighborhood() {
+        return mNeighborhood;
+    }
+
+    public String getmWebsite() {
+        return mWebsite;
+    }
+
+    public String getmDescription() {
+        return mDescription;
+    }
+
+    public int getmRestaurantID() {
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
         return mRestaurantID;
     }
 

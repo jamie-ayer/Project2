@@ -8,6 +8,7 @@
     android:paddingRight="12dp"
     android:paddingTop="4dp">
 
+<<<<<<< HEAD
     <!--<TextView-->
         <!--android:id="@+id/appTitle"-->
         <!--android:text="Restaurants"-->
@@ -23,13 +24,27 @@
         android:src="@drawable/app_logo"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
+=======
+    <TextView
+        android:id="@+id/appTitle"
+        android:text="Restaurants"
+        android:layout_marginTop="70dp"
+        android:textSize="65dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
         android:layout_height="wrap_content" />
 
     <EditText
         android:id="@+id/userNameEditText"
         android:hint="User Name"
         android:layout_marginTop="50dp"
+<<<<<<< HEAD
         android:layout_below="@+id/appLogo"
+=======
+        android:layout_below="@+id/appTitle"
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
         android:textColor="@color/LighterRed"
         android:textColorHint="@color/LighterRed"
         android:textAlignment="center"

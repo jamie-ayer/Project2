@@ -3,7 +3,10 @@ package com.example.jamieayer.project2;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+<<<<<<< HEAD
 import android.content.SharedPreferences;
+=======
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
 import android.database.Cursor;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -17,8 +20,11 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+<<<<<<< HEAD
 import com.google.gson.Gson;
 
+=======
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 
@@ -49,6 +55,7 @@ public class HomeScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
 
+<<<<<<< HEAD
         initViews();
         initClickListeners();
 
@@ -62,6 +69,8 @@ public class HomeScreenActivity extends AppCompatActivity {
     }
 
     private void initViews() {
+=======
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
         mLogOut = (Button)findViewById(R.id.logOutButton);
         mMoreRestaurants = (Button)findViewById(R.id.search);
         homeScreenListView = (ListView)findViewById(R.id.FavoritesList);
@@ -71,10 +80,23 @@ public class HomeScreenActivity extends AppCompatActivity {
         mFont = Typeface.createFromAsset(getAssets(), "fonts/AguafinaScript-Regular.ttf");
         mTitle.setTypeface(mFont);
 
+<<<<<<< HEAD
         mGreeting.setText("Welcome back " + User.getInstance().getUserName());
     }
 
     private void initClickListeners() {
+=======
+        myArrayList = User.getInstance().getUserFavorites();
+
+        if(myArrayList == null)
+            myArrayList = new ArrayList<>();
+
+        myAdapter = new CustomAdapterFavorites(HomeScreenActivity.this, myArrayList);
+        homeScreenListView.setAdapter(myAdapter);
+
+        mGreeting.setText("Welcome back " + User.getInstance().getUserName());
+
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
         mMoreRestaurants.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,8 +112,13 @@ public class HomeScreenActivity extends AppCompatActivity {
                 Intent intent = new Intent(HomeScreenActivity.this, DetailActivity.class);
                 Cursor cursor = mHelper.getRestaurantList();
 
+<<<<<<< HEAD
                 // -1 because of database offset
                 cursor.moveToPosition(myArrayList.get(position).getRestaurantID() - 1);
+=======
+                /* -1 because of database offset */
+                cursor.moveToPosition(myArrayList.get(position).getmRestaurantID() - 1);
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
 
                 intent.putExtra("id", cursor.getInt(cursor.getColumnIndex("_id")));
                 startActivity(intent);
@@ -126,6 +153,7 @@ public class HomeScreenActivity extends AppCompatActivity {
             }
         });
     }
+<<<<<<< HEAD
 
     public void logout(View view) {
 //        SharedPreferences mPrefs = getPreferences(MODE_PRIVATE);
@@ -146,4 +174,6 @@ public class HomeScreenActivity extends AppCompatActivity {
         String json = mPrefs.getString("MyObject", "");
         User user = gson.fromJson(json, User.class);
     }
+=======
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
 }

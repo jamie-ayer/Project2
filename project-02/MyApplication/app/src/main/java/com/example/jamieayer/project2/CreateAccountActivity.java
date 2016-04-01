@@ -13,8 +13,13 @@ import Project2.Databases.UserSQLiteOpenHelper;
  */
 public class CreateAccountActivity extends AppCompatActivity {
 
+<<<<<<< HEAD
     private EditText mAccountName;
     private EditText mPassword;
+=======
+    EditText mAccountName;
+    EditText mPassword;
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
 
     UserSQLiteOpenHelper myUserDB;
 
@@ -26,6 +31,10 @@ public class CreateAccountActivity extends AppCompatActivity {
         mAccountName = (EditText)findViewById(R.id.accountName);
         mPassword = (EditText)findViewById(R.id.password);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
     }
 
     public void create(View view) {
@@ -40,6 +49,10 @@ public class CreateAccountActivity extends AppCompatActivity {
             myUserDB.insert(mAccountName.getText().toString(), mPassword.getText().toString());
 
             Intent intent = new Intent(CreateAccountActivity.this, MainActivity.class);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
             startActivity(intent);
         }
     }

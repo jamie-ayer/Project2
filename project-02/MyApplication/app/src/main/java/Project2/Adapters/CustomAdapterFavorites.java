@@ -39,8 +39,13 @@ public class CustomAdapterFavorites extends ArrayAdapter<Restaurant> {
         mRestaurantType = (TextView)rowItem.findViewById(R.id.restaurantType);
         Restaurant restaurant = restaurantsArray.get(position);
 
+<<<<<<< HEAD
         mRestaurantName.setText(restaurant.getName());
         mRestaurantType.setText(restaurant.getType());
+=======
+        mRestaurantName.setText(restaurant.getmName());
+        mRestaurantType.setText(restaurant.getmType());
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
 
         return rowItem;
     }

@@ -17,7 +17,11 @@ import Project2.Databases.UserSQLiteOpenHelper;
  */
 public class CheckUsersActivity extends AppCompatActivity {
 
+<<<<<<< HEAD
     private CursorAdapter customAdapter;
+=======
+    CursorAdapter customAdapter;
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
     private Cursor mCursor;
     private ListView listView;
     private TextView mCheckUsersTitle;
@@ -28,6 +32,7 @@ public class CheckUsersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_check_users);
 
+<<<<<<< HEAD
         initViews();
 
         mCursor = UserSQLiteOpenHelper.getInstance(this).getUserList();
@@ -37,10 +42,21 @@ public class CheckUsersActivity extends AppCompatActivity {
     }
 
     private void initViews() {
+=======
+
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
         listView = (ListView)findViewById(R.id.usersListView);
         mCheckUsersTitle = (TextView)findViewById(R.id.currentUsers);
 
         mFont = Typeface.createFromAsset(getAssets(), "fonts/lobster.otf");
         mCheckUsersTitle.setTypeface(mFont);
+<<<<<<< HEAD
+=======
+
+        mCursor = UserSQLiteOpenHelper.getInstance(this).getUserList();
+        customAdapter = new CursorAdapterUsers(this, mCursor, 0);
+
+        listView.setAdapter(customAdapter);
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
     }
 }

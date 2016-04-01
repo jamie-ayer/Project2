@@ -12,7 +12,10 @@ public class User implements Serializable {
 
     private String mUserName;
     private String mUserPassword;
+<<<<<<< HEAD
     private int mUserID;
+=======
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
 
     private ArrayList<Restaurant> mUserFavorites;
 
@@ -24,10 +27,16 @@ public class User implements Serializable {
         return user;
     }
 
+<<<<<<< HEAD
     public User(String userName, String userPassword, int ID) {
         this.mUserName = userName;
         this.mUserPassword = userPassword;
         this.mUserID = ID;
+=======
+    public User(String userName, String userPassword) {
+        this.mUserName = userName;
+        this.mUserPassword = userPassword;
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
     }
 
     public String getUserName() {
@@ -55,6 +64,7 @@ public class User implements Serializable {
             mUserFavorites = new ArrayList<>();
         this.mUserFavorites.add(userFavorites);
     }
+<<<<<<< HEAD
 
     public int getUserID() {
         return mUserID;
@@ -63,4 +73,6 @@ public class User implements Serializable {
     public void setUserID(int mUserID) {
         this.mUserID = mUserID;
     }
+=======
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
 }

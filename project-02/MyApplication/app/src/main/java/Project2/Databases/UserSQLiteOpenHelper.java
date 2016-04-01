@@ -21,6 +21,10 @@ public class UserSQLiteOpenHelper extends SQLiteOpenHelper{
     public static final String COL_USER_NAME = "USER_NAME";
     public static final String COL_PASSWORD = "USER_PASSWORD";
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9155b936c5f812ed9e07f3161552270f51dc96a5
     public static final String[] USER_COLUMNS = {COL_ID,COL_USER_NAME,COL_PASSWORD};
 
     private static final String CREATE_USER_LIST_TABLE =
