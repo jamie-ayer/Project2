@@ -1,0 +1,50 @@
+Does the project appear to meet the technical requirements? Write up one sentence on your findings and give a score 0-3.
+
+Is your peer making API calls, using SDK's/third-party libraries? 
+    Not at the moment, but I'm certain that Jamie will be doing that
+Is your peer making use of Services? If so, are they offloading long tasks to a separate thread, i.e. AsyncTask, Runnable, IntentService, etc.
+    Not at the moment
+Is your peer making use of Fragments? If so, are they passing data from Fragment to Activity via interfaces? If not, why did absense of Fragments make sense?
+    Not at the moment
+Is your peer making use of RecyclerView? If so, does it appear to be working correctly ( implementation and otherwise )?
+    Yes, but at the moment, the recyclerView has no functionality 
+Is your peer making use of some sort of persistent storage, i.e. Firebase or SQLite? If so, why do you think Firebase/SQLite was chosen? Could they have used one or the other instead and why?
+    Not at this stage.
+
+
+
+
+
+2. Does the project appear to be creative, innovative, and different from any competition? Write up one sentence on your findings and give a score 0-3.
+
+    Hard to tell at this stage. I'm guessing that Jamie is making a Recipie app. I can't tell how this app, when its done, is creative, innovative, and different from any competition.. All I know is that there are a lot of recipie apps out on the market..sorry jamie, but I have to give you 0 points 
+
+Is your peer making use of proper UX patterns we learned in class? If not, what are they doing that is unconvetional or that might confuse a user ( you )?
+Not yet
+Is your peer making anything cool or awesome that you would like to note or applaud them on?
+not yet..sorry
+3. Does the project appear to follow correct coding styles and best practices? Write up one sentence on your findings and give a score 0-3.
+Not at the moment, but I'm sure it will be
+
+Are you able to reasonably follow the code without having anyone answer your questions?
+Yes, but there is not very much to follow
+
+Are you able to make sense of what the code is doing or is trying to do?
+I'm getting a sense of what Jamie is trying to  build, but at this point, the code isn't doing it..
+
+4. Find two pieces of code of any size: one that is readable and easy to follow and one that is difficult to follow and understand.
+All of jamies code makes sence at the moment, but there is not very much there... But for example, the Cardadapter class is easy to read, clean, and make sence
+
+What makes the readable code readable? Be as detailed as you can in your answer, it can be challenging to explain why something is easy to undertand
+The Cardadapter class is easy to read, clean, and make sence
+What makes the difficult code harder to follow? Be as detailed as you can in your answer.
+
+5. High level project overview: Take a look at as many individual files as you have time for
+
+Does this class make sense?
+The classes that Jamie has at the moment, all make sence, and , from what I can guess that Jamie is trying to build, are classes that are relevant.
+Does the structure of the class make sense?
+Yes, but there are, at the moment, only 4
+
+Is it clear what this class is supposed to do?
+Sort of,  ( in terms of what they probably will do when jamie has added some code to them)
